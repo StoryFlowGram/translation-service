@@ -1,0 +1,19 @@
+[project]
+name = "translation-service"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Squilix01",email = "Squilix01@no-reply.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "googletrans (>=4.0.2,<5.0.0)",
+    "g4f[all] (>=6.5.7,<7.0.0)",
+    "fastapi[all] (>=0.121.0,<0.122.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
