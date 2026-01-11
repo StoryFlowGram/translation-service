@@ -12,7 +12,7 @@ class CgptAdapter(CgptProtocol):
 
     async def get_translation_and_explanation(self, word: str):
         prompt = f"""
-        Дай подробную информацию о слове '{word}' (с Английского на русский).
+        Дай подробную информацию о слове '{word}' (с Английского на Украинский).
         Верни ответ ИСКЛЮЧИТЕЛЬНО в формате JSON со следующей структурой:
         {{
           "translation": "основной перевод",
