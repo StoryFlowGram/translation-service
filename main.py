@@ -13,3 +13,8 @@ app.include_router(cgpt_router)
 
 app.dependency_overrides[depends.translation_repo] = di.get_google_translate_adapter
 app.dependency_overrides[depends.cgpt_repo] = di.cgpt_adapter
+
+
+@app.get("/health")
+async def health_check():
+    return {"status": "ok", "service": "translation-service"}
